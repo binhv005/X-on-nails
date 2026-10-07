@@ -171,12 +171,14 @@ export default function SizingPage() {
 
             <video
               src="/nail-size.mp4"
+              poster="/assets/salon_interior.jpg"
               className="sizing-video-element"
               controls
               autoPlay
               loop
               muted
               playsInline
+              preload="auto"
             />
 
             <div className="sizing-video-overlay-tip" style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>

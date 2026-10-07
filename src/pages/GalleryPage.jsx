@@ -3,9 +3,9 @@ import { Link } from 'react-router-dom';
 import { Video, Camera, X, ShoppingBag } from 'lucide-react';
 
 const GALLERY_ITEMS = [
-  { id: 1, type: 'video', src: '/1K34PRO84_DMCL0D.mp4', title: 'Glazed Holographic Shimmer Set', category: 'videos' },
-  { id: 2, type: 'video', src: '/1K34PRO8E_DMCL0D.mp4', title: 'Blush Floral & French Tips', category: 'videos' },
-  { id: 3, type: 'video', src: '/1K34PRO8K_DMCL0D.mp4', title: 'Chrome Cat-Eye Swirl Art', category: 'videos' },
+  { id: 1, type: 'video', src: '/1K34PRO84_DMCL0D.mp4', poster: '/assets/nude_perfection.jpg', title: 'Glazed Holographic Shimmer Set', category: 'videos' },
+  { id: 2, type: 'video', src: '/1K34PRO8E_DMCL0D.mp4', poster: '/assets/white_aura.jpg', title: 'Blush Floral & French Tips', category: 'videos' },
+  { id: 3, type: 'video', src: '/1K34PRO8K_DMCL0D.mp4', poster: '/assets/beverly_hills.jpg', title: 'Chrome Cat-Eye Swirl Art', category: 'videos' },
   { id: 4, type: 'image', src: '/assets/blush_dream.jpg', title: 'Blush Dream 3D Petals', category: 'closeups' },
   { id: 5, type: 'image', src: '/assets/midnight_sparkle.jpg', title: 'Midnight Obsidian Crystals', category: 'closeups' },
   { id: 6, type: 'image', src: '/assets/white_aura.jpg', title: 'Celestial Aura 24k Gold Foil', category: 'closeups' },
@@ -55,10 +55,12 @@ export default function GalleryPage() {
             {item.type === 'video' ? (
               <video
                 src={item.src}
+                poster={item.poster}
                 autoPlay
                 loop
                 muted
                 playsInline
+                preload="auto"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />
             ) : (
@@ -107,7 +109,7 @@ export default function GalleryPage() {
             </button>
             <div style={{ maxHeight: '75vh', overflow: 'hidden', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
               {lightboxItem.type === 'video' ? (
-                <video src={lightboxItem.src} controls autoPlay loop style={{ maxHeight: '70vh', maxWidth: '100%' }} />
+                <video src={lightboxItem.src} poster={lightboxItem.poster} controls autoPlay loop style={{ maxHeight: '70vh', maxWidth: '100%' }} />
               ) : (
                 <img src={lightboxItem.src} alt={lightboxItem.title} style={{ maxHeight: '70vh', maxWidth: '100%', objectFit: 'contain' }} />
               )}

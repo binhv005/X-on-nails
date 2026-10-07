@@ -36,30 +36,36 @@ export default function HomePage({
           <div className="hero-video-col">
             <video
               src="/video01.mp4"
+              poster="/assets/blush_dream.jpg"
               autoPlay
               loop
               muted
               playsInline
+              preload="auto"
               className="hero-video-item"
             />
           </div>
           <div className="hero-video-col">
             <video
               src="/video02.mp4"
+              poster="/assets/rose_gold_luxe.jpg"
               autoPlay
               loop
               muted
               playsInline
+              preload="auto"
               className="hero-video-item"
             />
           </div>
           <div className="hero-video-col">
             <video
               src="/video03.mp4"
+              poster="/assets/midnight_sparkle.jpg"
               autoPlay
               loop
               muted
               playsInline
+              preload="auto"
               className="hero-video-item"
             />
           </div>
@@ -260,13 +266,40 @@ export default function HomePage({
       <section className="videos-fullwidth-showcase reveal reveal-up" id="gallery-section">
         <div className="videos-3col-grid reveal-stagger">
           <div className="video-col-item">
-            <video src="/1K34PRO8E_DMCL0D.mp4" autoPlay loop muted playsInline className="video-full-cover"></video>
+            <video
+              src="/1K34PRO8E_DMCL0D.mp4"
+              poster="/assets/white_aura.jpg"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="video-full-cover"
+            />
           </div>
           <div className="video-col-item">
-            <video src="/1K34PRO8K_DMCL0D.mp4" autoPlay loop muted playsInline className="video-full-cover"></video>
+            <video
+              src="/1K34PRO8K_DMCL0D.mp4"
+              poster="/assets/beverly_hills.jpg"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="video-full-cover"
+            />
           </div>
           <div className="video-col-item">
-            <video src="/1K34PRO84_DMCL0D.mp4" autoPlay loop muted playsInline className="video-full-cover"></video>
+            <video
+              src="/1K34PRO84_DMCL0D.mp4"
+              poster="/assets/nude_perfection.jpg"
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="auto"
+              className="video-full-cover"
+            />
           </div>
         </div>
       </section>
