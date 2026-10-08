@@ -438,15 +438,17 @@ textarea {
 }
 
 .header-logo-image {
-  height: 75px;
-  max-width: 220px;
+  height: 150px;
+  max-width: 460px;
   width: auto;
   object-fit: contain;
-  filter: drop-shadow(0 3px 8px rgba(0, 0, 0, 0.06));
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.08));
+  transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
 .header-logo-image:hover {
-  opacity: 0.92;
+  transform: scale(1.02);
+  opacity: 0.95;
 }
 
 /* ==========================================================================
@@ -4328,8 +4330,8 @@ textarea {
     display: none;
   }
   .header-logo-image {
-    height: 56px;
-    max-width: 170px;
+    height: 95px;
+    max-width: 280px;
   }
   .header-nav-bar-strip {
     display: none !important;
@@ -4386,8 +4388,8 @@ textarea {
     padding: 0 16px;
   }
   .header-logo-image {
-    height: 48px;
-    max-width: 140px;
+    height: 68px;
+    max-width: 200px;
   }
   .header-icon-btn {
     width: 34px;
